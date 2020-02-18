@@ -4,7 +4,7 @@
  */
 Element.prototype.eventListeners = {};
 
-module.exports = {
+const events = {
 
     /**
      * Attach an event handler function for one or more events to the elements.
@@ -80,3 +80,8 @@ module.exports = {
         return this;
     }
 };
+
+module.exports =  events;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = events;
