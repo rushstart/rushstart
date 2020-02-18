@@ -14,7 +14,11 @@ Add a `<script>` element for rushstart.js
 Or include it like webpack module
 
 ```javascript
-import $ from '@rushstart/core';
+import $ from '@rushstart/core'
+```
+
+```
+var $ = require("@rushstart/core")
 ```
 
 And write very fast code:

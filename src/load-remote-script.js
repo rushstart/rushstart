@@ -1,4 +1,4 @@
-import rs from "./core";
+let rs = require("./core");
 
 const _scriptCache = new Map();
 /**
@@ -15,7 +15,7 @@ rs.loadRemoteScript = function(url) {
     } else {
         promise = new Promise((resolve,reject) => {
             let s = document.createElement('script');
-            s.onerror = event => reject(new Error(`Failed to load '${url}'`));
+            s.onerror = () => reject(new Error(`Failed to load '${url}'`));
             s.onload = resolve;
             s.async = true;
             s.src = url;

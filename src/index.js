@@ -1,4 +1,4 @@
-import rs from './core'
+let rs = require("./core");
 rs.use('./event');
 rs.use('./load-remote-script');
 let _$ = window.$;
@@ -8,4 +8,6 @@ rs.noConflict = function() {
     window.rs = rs;
     return rs;
 };
-export default rs;
+module.exports = rs;
+// Allow use of default import syntax in TypeScript
+module.exports.default = rs;

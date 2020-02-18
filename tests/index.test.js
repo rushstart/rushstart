@@ -1,4 +1,4 @@
-import $ from './../src/index';
+let $ = require("./../src/index");
 
 $('<div class="wrapper"><div id="container" class="container"></div></div>').forEach(element => document.body.append(element));
 

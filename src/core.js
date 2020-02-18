@@ -166,19 +166,22 @@ class ElementList extends Array {
     }
 }
 
-const source = {
-    fn: ElementList.prototype,
-    /**
-     * @constructor
-     */
-    constructor: ElementList,
-
-    use(plugin) {
-        Object.assign(ElementList.prototype, require(`${plugin}`).default);
-    },
-};
-
-export default Object.assign(
+const rs = Object.assign(
     (selector, context) => new ElementList(selector, context),
-    source
+    {
+        fn: ElementList.prototype,
+        /**
+         * @constructor
+         */
+        constructor: ElementList,
+
+        use(plugin) {
+            Object.assign(ElementList.prototype, require(`${plugin}`));
+        },
+    }
 );
+
+module.exports =  rs;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = rs;

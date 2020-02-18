@@ -4,7 +4,7 @@
  */
 Element.prototype.eventListeners = {};
 
-export default {
+module.exports = {
 
     /**
      * Attach an event handler function for one or more events to the elements.
@@ -79,4 +79,4 @@ export default {
         });
         return this;
     }
-}
+};
