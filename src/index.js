@@ -1,5 +1,6 @@
 import rs from './core'
-require('./event');
+rs.use('./event');
+rs.use('./load-remote-script');
 let _$ = window.$;
 window.$ = rs;
 rs.noConflict = function() {
