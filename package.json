@@ -1,0 +1,41 @@
+{
+  "name": "@rushstart/core",
+  "version": "1.0.0",
+  "description": "JavaScript library for DOM operations",
+  "main": "src/index.js",
+  "homepage": "https://github.com/rushstart/rushstart",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rushstart/rushstart.git"
+  },
+  "keywords": [
+    "rushstart",
+    "javascript",
+    "DOM",
+    "events",
+    "library"
+  ],
+  "author": "Petrov Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushstart/rushstart/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "jest": "^25.1.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
