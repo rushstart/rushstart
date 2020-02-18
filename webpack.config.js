@@ -1,5 +1,8 @@
 module.exports = {
     mode: 'development',
+    output: {
+        filename: 'rushstart.min.js',
+    },
     module: {
         rules: [
             {
