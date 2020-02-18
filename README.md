@@ -5,7 +5,7 @@ $ npm i @rushstart/core
 
 ## Use it
 
-Add a `<script>` element for jbone.js
+Add a `<script>` element for rushstart.js
 
 ```html
 <script src="path/to/rushstart/dist/rushstart.min.js"></script>
