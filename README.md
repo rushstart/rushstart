@@ -24,9 +24,7 @@ And write very fast code:
 /**
 * Append a wrapper
 */
-$('<div id="wrapper"></div>').forEach(function (element) {
-    document.body.append(element);
-});
+$('<div id="wrapper"></div>').forEach(element => document.body.append(element));
 
 /**
 * Attach an event handler to a child element that has not yet been created
@@ -38,7 +36,5 @@ $('#wrapper').on("click", function() {
 /**
 * Append the child element
 */
-$('<a class="clicker"></a>').forEach(function (element) {
-    document.wrapper.append(element);
-});
+$('<a class="clicker"></a>').forEach(element => document.wrapper.append(element));
 ```
