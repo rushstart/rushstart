@@ -1,3 +1,9 @@
+
+/**
+ * @type {Object} registry of event handlers on the element
+ */
+Element.prototype.eventListeners = {};
+
 export default {
 
     /**

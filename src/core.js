@@ -45,12 +45,6 @@ if (!Event.prototype.composedPath) {
     }
 }
 
-/**
- * @type {Object} registry of event handlers on the element
- */
-Element.prototype.eventListeners = {};
-
-
 const htmlStringRegex = /^<[\w\W]+>$/;
 
 /**
