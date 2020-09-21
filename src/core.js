@@ -99,7 +99,7 @@ class ElementList extends Array {
         let elementList = new ElementList;
         this.forEach(element => {
             let p = element.parentElement;
-            while (p insanceof HTMLElement) {
+            while (p instanceof HTMLElement) {
                 let o = p;
                 if (o.matches(selector)) {
                     elementList.push(o);
